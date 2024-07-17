@@ -1,0 +1,332 @@
+@media (max-width: 620px) {
+
+    body {
+        background: #dddddd;
+        color: rgba(0,0,0,1);
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+
+    @font-face {
+        font-family:'fonteLogo' ;
+        src: url("../_fonts/bubblegum-sans-regular.otf");
+    }
+    
+    @font-face {
+        font-family:'fonteLogo' ;
+        src: url("../_fonts/bubblegum-sans-regular.otf");
+    }
+    div#interface {
+        width: 550px;
+        background-color: #ffffff;
+        margin: -10px auto 5px auto ;
+        box-shadow: 0px 0px  5px rgba(0,0,0,.5);
+        padding: 5px;
+    
+    }
+   
+    p {
+        text-align: justy;
+        text-indent: 25px;
+        }
+        a {
+          color: #606060;
+          text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        header#cabecalho img#icone{
+            position: absolute;
+            left:330px;
+            top:40px;
+        
+        }
+        header#cabecalho {
+            border-bottom: 1px #606060 solid;
+            height: 75px;
+            background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 30px;
+            position: relative; /* Garante que os filhos sigam o z-index do header */
+            margin-top: 25px; /* Ajuste conforme a altura do menu flutuante */
+            z-index: 5;
+        
+        }
+        header#cabecalho h1{
+            font-size: 'fonteLogo', sans-serif;
+            font-size: 20px; 
+            color: #606060;
+            text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+            padding:0px;
+            margin: 0px;
+        }
+
+        header#cabecalho h2 {
+            font-family: Arial sans-serif;
+            color:#8888;
+            font-size: 10pt;
+            padding: 0px;
+            margin-top: 0px;
+      }
+      /* Formatação de imagens com legendas */
+         
+      figure.foto-legenda {
+          position: relative;
+          border:4px solid white;
+          box-shadow:1px 1px 4px black;
+      
+      }
+      
+      figure.foto-legenda img {
+          width: 100%;
+          height: 100%;
+      
+      }
+      
+      figure.foto-legenda figcaption {
+          opacity: 0;
+          position: absolute;
+          top:0px;
+          background-color: rgba(0,0,0,.4);
+          color:white;
+          width: 1
+          100%;
+          height: 100%;
+          padding: 100px;
+          box-sizing: border-box;
+      }
+
+      figure.foto-legenda:hover figcaption {
+        opacity: 1s;
+        transition: opacity 1s ;
+    }
+    
+    /*Formatação do  Menu*/
+    nav#menu{
+        display: block;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #333;
+        color: #fff;
+        z-index: 10; /* Certifique-se de que o menu flutuante esteja no topo */
+        
+    }
+    nav#menu ul {
+        list-style: none;
+        text-transform:uppercase;
+        padding: 0;
+        display: flex; 
+        flex-wrap: nowrap;
+        justify-content: center;  
+    }
+        
+    nav#menu li {
+        display: inline-block;
+        background-color: #dddddd;
+        padding: 10px;
+        margin: 2px;
+        transition: background-color 1s; /* Corrigido o nome da propriedade */
+    
+    }                                
+    nav#menu li:hover {
+        background-color: #606060;
+    }
+
+    nav#menu h1 {
+        display: none;
+    
+    }
+    nav#menu a {
+        color: #000;
+        text-decoration: none;
+    }
+    nav#menu a:hover {
+       color: #ffffff; 
+       text-decoration: underline;  
+    }
+     
+    
+    article#noticia-principal h2 {
+        font-size: 13pt;
+        color: #606060;
+        background-color: #dddddd;
+        padding: 5px 0px 5px 10px;
+        margin: 5px 0px  5px 0px;
+       
+    }
+    header#cabecalho-artigo h1 {
+        font-family:'FonteLogo', sans-serif;
+        font-size:10pt;  
+        color: #606060;
+        margin-bottom:0p;
+      }
+       
+      .direita {
+        text-align: right;
+        
+      } 
+     
+      header#cabecalho-artigo h2 {
+        font-size: 13pt;
+        color: #cecece;
+        background-color: #ffffff;
+        margin: 0px;
+        
+    }
+    header#cabecalho-artigo h3 {
+        font-size: 12px;
+        color: #606060;
+        
+    }
+    table#tabelaspec td {
+        border: 1px solid #606060;
+        padding:5px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    table#tabelaspec td.ce {
+        color: #ffffff;
+        background-color:#606060;
+        vertical-align: top;
+        font-weight: bolder;   
+    }
+    table#tabelaspec td.cd{
+        background-color: #cecece;
+    
+        }
+        table#tabelaspec caption {
+            color: #888888;
+            font-size: 13pt;
+            font-weight: bolder;
+     }
+     table#tabelaspec caption span {
+        display: block;
+        float: right;
+        color:#000;
+        font-size: 8pt;
+        margin-top:10px;
+     }
+     section#corpo {
+    
+        display: block;
+        width: 450px;
+        float: left; 
+        border-right:1px solid #606060;
+        padding-right: 15px;
+     }
+    
+     aside#lateral {
+        display: block;
+        width:400px;
+        float: right;
+        background-color: #dddddd;
+        padding: 5px;
+        float: right;
+        /*box-sizing: border-box;  2px 2px 2px rgba(0,0,0,.5) ;*/
+     }
+     aside#lateral h1 {
+     font-family: 'FonteLogo', sans-serif;
+     font-size: 20pt;
+     color: #606060;
+     margin-top: 0px;
+     }
+     aside#lateral h2{
+     background-color: #606060;
+     font-size: 13pt;
+     color:#ffffff;
+     padding: 5px;
+     }
+     
+     footer#rodape {
+        clear: both;
+        border-top: 1px solid #606060    
+    }
+    footer#rodape p{
+        text-align:center;
+    }
+    table#tabelaspec td {
+        border: 1px solid #606060;
+        padding:5px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    table#tabelaspec td.ce {
+        color: #ffffff;
+        background-color:#606060;
+        vertical-align: top;
+        font-weight: bolder;   
+    }
+    table#tabelaspec td.cd{
+        background-color: #cecece;
+    
+        }
+        table#tabelaspec caption {
+            color: #888888;
+            font-size: 13pt;
+            font-weight: bolder;
+     }
+     table#tabelaspec caption span {
+        display: block;
+        float: right;
+        color:#000;
+        font-size: 8pt;
+        margin-top:5px;
+     }
+    
+    
+    footer#rodape {
+        clear: both;
+        border-top: 1px solid #606060    
+    }
+    footer#rodape p{
+        text-align:center;
+    }
+    #cidades option {
+        font-weight: normal;
+    }
+    
+    /* Ajustes responsivos */
+@media (max-width: 768px) {
+    nav#menu ul {
+        flex-direction: column; /* Alinha os itens do menu em coluna em telas menores */
+        align-items: center; /* Centraliza os itens do menu em telas menores */
+    }
+
+    nav#menu li {
+        width: 100%; /* Garante que os itens do menu ocupem toda a largura em telas menores */
+        text-align: center; /* Centraliza o texto dentro de cada item do menu */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
