@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tudo sobre Google Glass</title>
-    <link rel="stylesheet" type="text/css" href="../_css/styles.css"/>
-    <link rel="stylesheet" type="text/css" href="../_css/form.css"/>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="fotos.css">
+<script src="funcao.js"></script>
+<script>
+function cal_total() {
+    var qtd = parseInt(document.getElementById...
+    tot = qtd * 1500;
+    document.getElementById('cTot')...
+}
+</script>
+</head>
     
-    <script language="javascript" src="../_javascript/funcoes.js"></script>
-   
-   <script>
-        function cal_total() {
-            var qtd = parseInt(document.getElementById('cQtd').value);
-            tot = qtd * 1500;
-            document.getElementById('cTot').value = tot;
-
-        } 
-    </script>
 </head>
 
 <body>
